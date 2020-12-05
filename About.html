@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kirby's Dreamsite</title>
+    <link rel="stylesheet" href="FinalProjectCSS/About.css">
+    <link rel="shortcut icon" type="image/png" href="https://sdl-stickershop.line.naver.jp/products/0/0/1/6287/android/stickers/11088070.png;compress=true">
+    <script src="FinalProjectJS/About.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>    
+<body onload="load()">
+    <div class="nav">
+        <label for="toggle">&#9776</label>
+    </div>
+    <input type="checkbox" id="toggle" checked>
+    <div class="header">
+        <div id="Home" onmouseover="big(this)" onmouseout="small(this)"><a href="FinalProject.html">Home</a></div>
+        <div id="About" onmouseover="big(this)" onmouseout="small(this)"><a href="About.html">About Kirby</a></div>
+        <div id="History" onmouseover="big(this)" onmouseout="small(this)"><a href="History.html">History</a></div>
+        <div id="Games" onmouseover="big(this)" onmouseout="small(this)"><a href="Games.html">Games</a></div>
+        <div id="Gallery" onmouseover="big(this)" onmouseout="small(this)"><a href="Gallery.html">Gallery</a></div>
+    </div>
+    <div class="main">
+        <div class="text">
+            <h1 id="Bout">About Kirby!</h1>
+                <div id="description">
+                    <p> Kirby is a pink puffball and the main character of the respective series. He is 
+                        one of Nintendo's most famous and familiar icons. His round appearance, simple design
+                        and ability to copy his foes' powers have made him a well-known figure in videogames, which
+                        makes him one of the most iconic videogame characters.
+                    </p>
+                    <p> He has a wide variety of copy abilities, ranging from simple abilities like
+                        Fire and Sword to quite complex powers like UFO. In some of the games, he also
+                        has access to unique Super Abilities, which include Ultra Abilities and Hypernova.
+                    </p>
+                    <p>
+                        Ultimately, he is the epitomy of kindness as he has zero intent of malice and evil, 
+                        all his intentions are towards the greater good, even his opposite self(AKA Shadow Kirby) is as pure as he is.
+                        He may also have the privilege of being the mightiest character in videogames, and even fiction! He also has 
+                        different comics and even an anime after him.
+                    </p>
+                </div>
+        </div>
+    </div>   
+    <div id="Container">
+        <figure id="Copy" onmouseover="borderAppear(this)" onmouseout="borderDisappear(this)">
+            <img src="https://i.ytimg.com/vi/U3FD8y-ElUY/maxresdefault.jpg" alt="Kirby Abilities" id="Abilities">
+            <figcaption> A small portion of Kirby's abilities</figcaption>
+        </figure>
+        <figure id="Ultra" onmouseover="borderAppear(this)" onmouseout="borderDisappear(this)">
+            <img src="https://i.ytimg.com/vi/ixJHoE6nPYA/maxresdefault.jpg" alt="Super Ability" id="Super">
+            <figcaption> Some super abilites</figcaption>
+        </figure>
+        <figure id="Anime" onmouseover="borderAppear(this)" onmouseout="borderDisappear(this)">
+            <img src="https://vignette.wikia.nocookie.net/kirby/images/0/0f/Аниме%21.jpg/revision/latest/scale-to-width-down/340?cb=20170403083119&path-prefix=ru" alt="Right back at Ya!" id="Animation">
+            <figcaption> The Kirby anime</figcaption>
+        </figure>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kirby's Dreamsite</title>
+    <link rel="stylesheet" href="FinalProjectCSS/History.css">
+    <link rel="shortcut icon" type="image/png" href="https://sdl-stickershop.line.naver.jp/products/0/0/1/6287/android/stickers/11088070.png;compress=true">
+    <script src="FinalProjectJS/History.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>   
+<body onload="load()">
+    <div class="nav">
+        <label for="toggle">&#9776</label>
+    </div>
+    <input type="checkbox" id="toggle" checked>
+    <div class="header">
+        <div id="Home" onmouseover="big(this)" onmouseout="small(this)"><a href="FinalProject.html">Home</a></div>
+        <div id="About" onmouseover="big(this)" onmouseout="small(this)"><a href="About.html">About Kirby</a></div>
+        <div id="History" onmouseover="big(this)" onmouseout="small(this)"><a href="History.html">History</a></div>
+        <div id="Games" onmouseover="big(this)" onmouseout="small(this)"><a href="Games.html">Games</a></div>
+        <div id="Gallery" onmouseover="big(this)" onmouseout="small(this)"><a href="Gallery.html">Gallery</a></div>
+    </div>
+    <div class="main">
+        <h1 id="His">History</h1>
+        <div class="text1">
+            <p>
+                Kirby first debuted in 1992 in Kirby's Dreamland on the Gameboy, and he was created 
+                by game designer <a href="https://en.wikipedia.org/wiki/Masahiro_Sakurai" id="Sakurai">Masahiro Sakurai</a> From there on, the franchise continued to have more
+                games, spin-offs, and anime. Each entry in the series further explores the vast world of 
+                Pop Star, Kirby's home planet, and the Galaxy. In each game, Kirby clashes against a supreme entity,
+                but thanks to his abilities and friends, he's always able to destroy them. 
+            </p>
+            <p>
+                Each game introduced new characters. The first game only showcased King DeDeDe, Kirby's 
+                main foe, who later becomes his trusted ally. Later on, we get introduced to Meta Knight,
+                a mysterious being who seems to be of the same species as Kirby. Of course, more formidable bosses
+                approach as well. The stakes of each Kirby game is high, as it's in Kirby's hands to save the world
+                and even the Universe. The lore of the games, despite the mascot being adorable and positive, is quite deep 
+                and extremely vast. Talking about here would take hours, if not days, so it's better to experience it for yourself
+                if you're interested!
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <figure id="Evo" onmouseover="borderAppear(this)" onmouseout="borderDisappear(this)">
+            <img src="https://i.ytimg.com/vi/Db31Uo5bnys/maxresdefault.jpg" alt="Evolution" id="Ev">
+            <figurecaption>Kirby's evolution</figurecaption>
+        </figure>
+        <figure id="Popstar" onmouseover="borderAppear(this)" onmouseout="borderDisappear(this)">
+            <img src="https://pbs.twimg.com/media/EWyaOWSXkAg9wWO.jpg" alt="Popstar" id="Planet">
+            <figurecaption>Planet Popstar</figurecaption>
+        </figure>
+        <figure id="Enemies" onmouseover="borderAppear(this)" onmouseout="borderDisappear(this)">
+            <img src="https://japanesenintendo.files.wordpress.com/2020/09/kirby-fighters-2-screen3.jpg?w=1024" alt="Frenemies" id="Frenemies">
+            <figurecaption>King DeDeDe and Meta Knight</figurecaption>
+        </figure>
+        <figure id="Final" onmouseover="borderAppear(this)" onmouseout="borderDisappear(this)">
+            <img src="https://i.ytimg.com/vi/eMymu85f7Z4/maxresdefault.jpg" alt="Final" id="Boss">
+            <figurecaption>Some of the Final Bosses in each games</figurecaption>
+        </figure>
+    </div>
+</body>
+</html>

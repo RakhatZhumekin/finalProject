@@ -1,0 +1,203 @@
+body {
+	background-image: url("https://blackgame.org/wp-content/uploads/2018/10/nintendo-shares-gorgeous-concept-art-for-kirby-star-allies-on-switch.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: kirby;
+	opacity: 0;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+}
+
+@font-face {
+	src: url(Fonts/kirby-classic.ttf);
+	font-family: kirby;
+}
+
+#MainPic {
+	width: 500px;
+	margin-top: 70px;
+	margin-left: 70px;
+}
+
+.text {
+	position: relative;
+	width: 300px;
+	left: 800px;
+	bottom: 500px;
+}
+
+.text h1 {
+	font-size: 80px;
+}
+
+.text p {
+	font-size: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#log_in {
+	font-family: kirby;
+	font-size: 20px;
+	position: relative;
+	left: 850px;
+	bottom: 475px;
+	width: 150px;
+	height: 75px;
+}
+
+#log_in_icon {
+	width: 100px;
+	position: relative;
+	left: -20px;
+	border-radius: 50%;
+}
+
+.popup {
+	position: absolute;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 2;
+	opacity: 0;
+}
+
+.popup-content {
+	text-align: center;
+	background-color: white;
+	height: 300px;
+	width: 500px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.popup-content input {
+	font-family: kirby;
+	display: block;
+	margin: 20px auto;
+	width: 50%;
+	height: 10%;
+	padding: 7px;
+}
+
+#log_in_2 {
+	font-family: kirby;
+	font-size: 15px;
+	width: 100px;
+	height: 50px;
+}
+
+#close {
+	position: relative;
+	top: -100px;
+	right: -320px;
+	border-radius: 50%;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+.user_profile {
+	position: absolute;
+	top: 80px;
+	right: 280px;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	z-index: 1;
+	display: none;
+}
+
+#profile_icon {
+	width: 60px;
+	height: 60px;
+	display: inline;
+	border-radius: 50%;
+}
+
+#username {
+	position: relative;
+	bottom: 15px;
+	right: 5px;
+	margin: 0;
+	padding: 10px;
+	display: inline;
+	color: white;
+	font-size: 25px;
+}
+
+#toggle {
+	display: none;
+}
+
+.nav {
+	float: left;
+}
+
+label {
+	margin: 10px 0 0 10px;
+	font-size: 35px;
+	display: none;
+}
+
+@media (max-width: 700px) {
+	#MainPic {
+		width: 400px;
+		position: relative;
+		left: 50px;
+	}
+	.text {
+		position: relative;
+		left: 150px;
+		bottom: 70px;
+	}
+	#log_in {
+		position: relative;
+		left: 150px;
+		bottom: 10px;
+	}
+	.popup {
+		position: fixed;
+		bottom: 600px;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.user_profile {
+		position: relative;
+		top: 50px;
+		left: 0px;
+	}
+
+	label {
+		display: block;
+		cursor: pointer;
+	}
+
+	.header {
+		display: block;
+		text-align: center;
+		padding-top: 60px;
+		font-size: 35px;
+	}
+
+	.header div {
+		border-top: 1px solid black;
+		padding: 10px 0;
+	}
+
+	#toggle:checked + .header {
+		display: none;
+	}
+}

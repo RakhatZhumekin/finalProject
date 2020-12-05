@@ -1,0 +1,107 @@
+body {
+	background-image: url("https://wallpaperaccess.com/full/1262772.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: kirby;
+	opacity: 0;
+}
+
+@font-face {
+	src: url(Fonts/kirby-classic.ttf);
+	font-family: kirby;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#Title {
+	text-align: center;
+	font-size: 50px;
+}
+
+p {
+	font-size: 20px;
+}
+
+#Pictures {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#Pictures > div {
+	margin-top: 10px;
+}
+
+figure {
+	text-align: center;
+	width: 300px;
+	height: 250px;
+	border-radius: 5%;
+}
+
+img {
+	width: 300px;
+	height: 200px;
+	border-radius: 5%;
+}
+
+#Yeah {
+	text-align: center;
+}
+
+#Locations {
+	display: flex;
+	justify-content: space-around;
+}
+
+#Map {
+	height: 300px;
+	width: 600px;
+}
+
+#toggle {
+	display: none;
+}
+
+.nav {
+	float: left;
+}
+
+label {
+	margin: 10px 0 0 10px;
+	font-size: 35px;
+	display: none;
+}
+
+@media (max-width: 700px) {
+	label {
+		margin-top: 0px;
+		display: block;
+		cursor: pointer;
+	}
+
+	.header {
+		display: block;
+		text-align: center;
+		padding-top: 60px;
+		font-size: 35px;
+	}
+
+	.header div {
+		border-top: 1px solid black;
+		padding: 10px 0;
+	}
+
+	#toggle:checked + .header {
+		display: none;
+	}
+}
